@@ -10,8 +10,8 @@
         <StackPanel>
             <WrapPanel Margin="10" HorizontalAlignment="Center" Orientation="Horizontal">
                 <Button Name="btnLoadFromFile" Margin="0,0,20,0" Click="BtnLoadFromFile_Click">Wybierz obraz</Button>
+                <Slider Name="slider" ValueChanged="jotde" Minimum="0.1" Maximum="1" Value="1" TickFrequency="0.1" Width="200"></Slider>
 
-                
                 <StackPanel Margin="10" Width="200px">
                     <Label FontWeight="Bold">Stretch</Label>
                     <RadioButton Name="FillCh" Click="StretchChange" Checked="FillChecked">Fill</RadioButton>
@@ -25,9 +25,9 @@
                     <TextBox Height="24" Text="Wpisz wysokosc" TextWrapping="Wrap" Width="150" Name="imgHeight" Margin="0,2,0,0" LostFocus="lostH" GotFocus="dostajeH"/>
                     <Button Name="setWH" Click="setWHclick">Zatwierdz</Button>
                 </StackPanel>
-                <StackPanel>
-                    <Slider Name="alpha" ValueChanged="alphaIMG" Minimum="0.1" Maximum="1" Value="1" TickFrequency="0.1" Width="200"></Slider>
-                </StackPanel>
+                
+                    
+                
                 
 
             </WrapPanel>

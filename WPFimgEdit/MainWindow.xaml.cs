@@ -110,14 +110,20 @@ namespace WPFimgEdit
 
             imgDynamic.Width = sze;
             imgDynamic.Height = wys;
+            
+
         }
 
-        private void alphaIMG(object sender, RoutedPropertyChangedEventArgs<double> e)
+       
+
+        private void jotde(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            double DanaAlpha = alpha.Value;
-            
-            imgDynamic.Opacity = alpha.Value;
-            
+            double test = slider.Value;
+            if (imgDynamic != null)
+            {
+                imgDynamic.Opacity = test;
+            }
+
         }
     }
 }
